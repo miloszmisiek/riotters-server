@@ -52,4 +52,6 @@ app.get("/crypto/info/:id", (req, res) => {
   });
 });
 
-app.listen(3000, () => console.log("API server running..."));
+app.listen(process.env.PORT || 3000, () =>
+  console.log("API server running...")
+);
